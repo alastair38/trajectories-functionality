@@ -55,13 +55,13 @@ function blockhaus_register_patterns() {
           'users',
         ],
          'content'     => '<!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"className":"blockhaus-profile flex-col md:flex-row flex gap-0 md:gap-12 py-6"} -->
-         <div class="wp-block-group blockhaus-profile flex-col md:flex-row flex gap-0 md:gap-12 py-6"><!-- wp:image {"id":458,"sizeSlug":"profile","linkDestination":"none","className":"aspect-square min-w-fit max-w-fit"} -->
+         <div itemscope itemtype="https://schema.org/Person" class="wp-block-group blockhaus-profile flex-col md:flex-row flex gap-0 md:gap-12 py-6"><!-- wp:image {"id":458,"sizeSlug":"profile","linkDestination":"none","className":"aspect-square min-w-fit max-w-fit"} -->
          <figure class="wp-block-image size-profile aspect-square min-w-fit max-w-fit"><img src="http://ypag.local/wp-content/uploads/2022/05/janko-ferlic-1nizzZ-SFw4-unsplash-3-300x300.jpg" alt="" class="wp-image-458"/></figure>
          <!-- /wp:image -->
          
          <!-- wp:group {"className":"self-start md:self-center mt-0 md:mt-auto py-6 md:p-0 space-y-6"} -->
          <div class="wp-block-group self-start md:self-center mt-0 md:mt-auto py-6 md:p-0 space-y-6"><!-- wp:heading {"className":"font-bold"} -->
-         <h2 class="font-bold">Your name</h2>
+         <h2 itemprop="name" class="font-bold">Your name</h2>
          <!-- /wp:heading -->
          
          <!-- wp:paragraph -->
@@ -92,9 +92,9 @@ function blockhaus_register_patterns() {
         'users',
       ],
       'content'     => '<!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"className":"blockhaus-profile-alt flex-col-reverse justify-between md:flex-row flex gap-0 md:gap-12 py-6"} -->
-      <div class="wp-block-group blockhaus-profile-alt flex-col-reverse justify-between md:flex-row flex gap-0 md:gap-12 py-6"><!-- wp:group {"className":"self-start md:self-center mt-0 md:mt-auto py-6 md:p-0 space-y-6"} -->
+      <div itemscope itemtype="https://schema.org/Person" class="wp-block-group blockhaus-profile-alt flex-col-reverse justify-between md:flex-row flex gap-0 md:gap-12 py-6"><!-- wp:group {"className":"self-start md:self-center mt-0 md:mt-auto py-6 md:p-0 space-y-6"} -->
       <div class="wp-block-group self-start md:self-center mt-0 md:mt-auto py-6 md:p-0 space-y-6"><!-- wp:heading {"className":"font-bold"} -->
-      <h2 class="font-bold">Your name</h2>
+      <h2 itemprop="name" class="font-bold">Your name</h2>
       <!-- /wp:heading -->
       
       <!-- wp:paragraph -->
