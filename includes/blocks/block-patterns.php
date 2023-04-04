@@ -54,31 +54,29 @@ function blockhaus_register_patterns() {
          'categories'    => [
           'users',
         ],
-         'content'     => '<!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"className":"blockhaus-profile flex-col md:flex-row flex gap-0 md:gap-12 py-6"} -->
-         <div itemscope itemtype="https://schema.org/Person" class="wp-block-group blockhaus-profile flex-col md:flex-row flex gap-0 md:gap-12 py-6"><!-- wp:image {"id":458,"sizeSlug":"profile","linkDestination":"none","className":"aspect-square min-w-fit max-w-fit"} -->
-         <figure class="wp-block-image size-profile aspect-square min-w-fit max-w-fit"><img src="http://ypag.local/wp-content/uploads/2022/05/janko-ferlic-1nizzZ-SFw4-unsplash-3-300x300.jpg" alt="" class="wp-image-458"/></figure>
+         'content'     => '<!-- wp:group {"style":{"spacing":{"blockGap":"0px","padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"blockhaus-profile flex-col md:flex-row flex gap-0 md:gap-12"} -->
+         <div class="wp-block-group blockhaus-profile flex-col md:flex-row flex gap-0 md:gap-12" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:image {"id":1472,"sizeSlug":"profile","linkDestination":"none","className":"aspect-square w-80 h-80"} -->
+         <figure class="wp-block-image size-profile aspect-square w-80 h-80"><img src="http://alastairc2.sg-host.com/wp-content/uploads/2022/11/michelle-pentecost.x95a012c0-300x300.webp" alt="" class="wp-image-1472"/></figure>
          <!-- /wp:image -->
          
          <!-- wp:group {"className":"self-start md:self-center mt-0 md:mt-auto py-6 md:p-0 space-y-6"} -->
          <div class="wp-block-group self-start md:self-center mt-0 md:mt-auto py-6 md:p-0 space-y-6"><!-- wp:heading {"className":"font-bold"} -->
-         <h2 itemprop="name" class="font-bold">Your name</h2>
+         <h2 class="wp-block-heading font-bold">NAME - POSITION</h2>
          <!-- /wp:heading -->
          
          <!-- wp:paragraph -->
-         <p>Age:</p>
+         <p>NAME is a Senior Lecturer in Anthropology and Global Health in the Department of Global Health and Social Medicine, King’s College London. She is an honorary researcher in the School of Clinical Medicine at the University of the Witwatersrand ...</p>
          <!-- /wp:paragraph -->
          
-         <!-- wp:paragraph -->
-         <p>Why I joined YPAG:</p>
+         <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+         <div class="wp-block-group"><!-- wp:paragraph -->
+         <p>Follow NAME on:</p>
          <!-- /wp:paragraph -->
          
-         <!-- wp:paragraph -->
-         <p>What I have gained from YPAG:</p>
-         <!-- /wp:paragraph -->
-         
-         <!-- wp:paragraph -->
-         <p>Fun fact:</p>
-         <!-- /wp:paragraph --></div>
+         <!-- wp:social-links {"iconColor":"secondary","iconColorValue":"rgba(41 44 44 / 1)","openInNewTab":true,"showLabels":true,"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"className":"is-style-logos-only"} -->
+         <ul class="wp-block-social-links has-visible-labels has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"https://twitter.com/medanthdoc","service":"twitter"} /--></ul>
+         <!-- /wp:social-links --></div>
+         <!-- /wp:group --></div>
          <!-- /wp:group --></div>
          <!-- /wp:group -->',
      )
@@ -91,31 +89,29 @@ function blockhaus_register_patterns() {
       'categories'    => [
         'users',
       ],
-      'content'     => '<!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"className":"blockhaus-profile-alt flex-col-reverse justify-between md:flex-row flex gap-0 md:gap-12 py-6"} -->
-      <div itemscope itemtype="https://schema.org/Person" class="wp-block-group blockhaus-profile-alt flex-col-reverse justify-between md:flex-row flex gap-0 md:gap-12 py-6"><!-- wp:group {"className":"self-start md:self-center mt-0 md:mt-auto py-6 md:p-0 space-y-6"} -->
+      'content'     => '<!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"className":"blockhaus-profile-alt flex-col-reverse justify-between md:flex-row flex gap-0 md:gap-12"} -->
+      <div class="wp-block-group blockhaus-profile-alt flex-col-reverse justify-between md:flex-row flex gap-0 md:gap-12"><!-- wp:group {"className":"self-start md:self-center mt-0 md:mt-auto py-6 md:p-0 space-y-6"} -->
       <div class="wp-block-group self-start md:self-center mt-0 md:mt-auto py-6 md:p-0 space-y-6"><!-- wp:heading {"className":"font-bold"} -->
-      <h2 itemprop="name" class="font-bold">Your name</h2>
+      <h2 class="wp-block-heading font-bold">NAME - POSITION</h2>
       <!-- /wp:heading -->
       
       <!-- wp:paragraph -->
-      <p>Age:</p>
+      <p>NAME is the project coordinator for the Trajectories project at the Developmental Pathways to Health Research Unit at the University of the Witwatersrand. She has previous experience as a research assistant In the HeLTI trial. She is currently a project coordinator for Trajectories study and she is responsible for managing the day to day running of the study, logistics, administrative work, and some HR components.</p>
       <!-- /wp:paragraph -->
       
-      <!-- wp:paragraph -->
-      <p>Why I joined YPAG:</p>
+      <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+      <div class="wp-block-group"><!-- wp:paragraph -->
+      <p>Follow NAME on:</p>
       <!-- /wp:paragraph -->
       
-      <!-- wp:paragraph -->
-      <p>What I have gained from YPAG:</p>
-      <!-- /wp:paragraph -->
-      
-      <!-- wp:paragraph -->
-      <p>Fun fact:</p>
-      <!-- /wp:paragraph --></div>
+      <!-- wp:social-links {"iconColor":"secondary","iconColorValue":"rgba(41 44 44 / 1)","openInNewTab":true,"showLabels":true,"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"className":"is-style-logos-only"} -->
+      <ul class="wp-block-social-links has-visible-labels has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"https://twitter.com/Tsakani_PC","service":"twitter"} /--></ul>
+      <!-- /wp:social-links --></div>
+      <!-- /wp:group --></div>
       <!-- /wp:group -->
       
-      <!-- wp:image {"id":458,"sizeSlug":"profile","linkDestination":"none","className":"aspect-square min-w-fit max-w-fit"} -->
-      <figure class="wp-block-image size-profile aspect-square min-w-fit max-w-fit"><img src="http://ypag.local/wp-content/uploads/2022/05/janko-ferlic-1nizzZ-SFw4-unsplash-3-300x300.jpg" alt="" class="wp-image-458"/></figure>
+      <!-- wp:image {"id":1472,"sizeSlug":"profile","linkDestination":"none","className":"aspect-square w-80 h-80"} -->
+      <figure class="wp-block-image size-profile aspect-square w-80 h-80"><img src="http://alastairc2.sg-host.com/wp-content/uploads/2022/11/michelle-pentecost.x95a012c0-300x300.webp" alt="" class="wp-image-1472"/></figure>
       <!-- /wp:image --></div>
       <!-- /wp:group -->',
   )

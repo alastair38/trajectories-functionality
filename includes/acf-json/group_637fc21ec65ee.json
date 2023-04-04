@@ -4,11 +4,11 @@
     "fields": [
         {
             "key": "field_637fc21f84687",
-            "label": "Background image layout",
+            "label": "Set featured image as background",
             "name": "background_image_layout",
             "aria-label": "",
             "type": "true_false",
-            "instructions": "",
+            "instructions": "A featured image must be assigned to the content for this setting to work.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -16,7 +16,7 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Set the featured image as the header's background. Please note, a featured image must be assigned to the content in order for this setting to work",
+            "message": "",
             "default_value": 0,
             "ui_on_text": "",
             "ui_off_text": "",
@@ -28,9 +28,17 @@
             "name": "contain_image",
             "aria-label": "",
             "type": "true_false",
-            "instructions": "",
+            "instructions": "Select 'Yes' to contain the image at its default aspect ratio rather than cover the whole background.",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_637fc21f84687",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -48,9 +56,17 @@
             "name": "position_image",
             "aria-label": "",
             "type": "button_group",
-            "instructions": "",
+            "instructions": "Choose which side the contained image will be aligned to.",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6387871a801d1",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -126,10 +142,10 @@
     "position": "side",
     "style": "default",
     "label_placement": "top",
-    "instruction_placement": "label",
+    "instruction_placement": "field",
     "hide_on_screen": "",
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1674840523
+    "modified": 1675162123
 }
