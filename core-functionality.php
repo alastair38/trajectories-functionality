@@ -26,14 +26,28 @@ function my_acf_settings_show_admin( $show_admin ) {
     return true;
 }
 
-define( 'MY_PLUGIN_DIR_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) . '/includes/acf/' ) );
-
-add_filter('acf/settings/save_json', 'my_acf_json_save_point');
+// define( 'MY_PLUGIN_DIR_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) . '/includes/' ) );add_filter('acf/settings/save_json', 'my_acf_json_save_point');
  
-function my_acf_json_save_point( $path ) {
+// function my_acf_json_save_point( $path ) {
+    
+//     // Update path
+//     $path = MY_PLUGIN_DIR_PATH. '/acf-json';
+//     // Return path
+//     return $path;
+    
+// }
+
+
+
+// define( 'MY_PLUGIN_DIR_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) . 'includes/' ) );
+
+add_filter('acf/settings/save_json', 'acf_json_save_point');
+ 
+function acf_json_save_point( $path ) {
     
     // Update path
-    $path = MY_PLUGIN_DIR_PATH. '/acf-json';
+    $path = plugin_dir_path( __FILE__ ). 'includes/acf-json';
+    
     // Return path
     return $path;
     
@@ -58,6 +72,8 @@ if( function_exists('acf_add_options_page') ) {
 /* Register the Overview message for the top of the Theme Options page  */
 
 if( function_exists('acf_add_local_field_group') ):
+    
+    
 
     acf_add_local_field_group(array(
         'key' => 'group_6299dedce59b7',
@@ -111,7 +127,7 @@ include( plugin_dir_path( __FILE__ ) . 'includes/fields/blocks.php');
 
 // Include file to register ACF content fields for post type editing options
 
-include( plugin_dir_path( __FILE__ ) . 'includes/fields/content.php');
+//include( plugin_dir_path( __FILE__ ) . 'includes/fields/content.php');
 
 // Include file to register ACF SEO fields
 

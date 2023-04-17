@@ -1,6 +1,6 @@
 {
     "key": "group_637fc21ec65ee",
-    "title": "Header Background",
+    "title": "Header background",
     "fields": [
         {
             "key": "field_637fc21f84687",
@@ -147,5 +147,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1675162123
+    "modified": 1681730790
 }
