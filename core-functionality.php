@@ -53,6 +53,18 @@ function acf_json_save_point( $path ) {
     
 }
 
+add_filter('acf/settings/load_json', 'acf_json_load_point');
+ 
+function acf_json_load_point( $path ) {
+    
+    // Update path
+    $path = plugin_dir_path( __FILE__ ). 'includes/acf-json';
+    
+    // Return path
+    return $path;
+    
+}
+
 // Add options page
 
 if( function_exists('acf_add_options_page') ) {
