@@ -26,7 +26,9 @@ function my_acf_settings_show_admin( $show_admin ) {
     return true;
 }
 
-define( 'MY_PLUGIN_DIR_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) . '/includes/' ) );add_filter('acf/settings/save_json', 'my_acf_json_save_point');
+define( 'MY_PLUGIN_DIR_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) . '/includes/acf/' ) );
+
+add_filter('acf/settings/save_json', 'my_acf_json_save_point');
  
 function my_acf_json_save_point( $path ) {
     
