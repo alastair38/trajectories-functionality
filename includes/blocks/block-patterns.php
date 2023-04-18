@@ -117,59 +117,59 @@ function blockhaus_register_patterns() {
   )
 ); 
 
- register_block_pattern(
-  'blockhaus/cta-with-video',
-  array(
-      'title'       => __( 'Call to Action', 'blockhaus' ),
-      'categories'    => [
-        'callouts-and-quotes',
-      ],
-      'content'     => '
-      <!-- wp:group {"tagName":"section","align":"full","className":"blockhaus-cta bg-accent slanted z-0 relative overflow-hidden"} -->
-      <section class="wp-block-group alignfull blockhaus-cta bg-accent slanted z-0 relative overflow-hidden"><!-- wp:heading {"textAlign":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"900"}},"fontSize":"gigantic"} -->
-      <h2 class="has-text-align-center has-gigantic-font-size" style="font-style:normal;font-weight:900">What is YPAG?</h2>
-      <!-- /wp:heading -->
+//  register_block_pattern(
+//   'blockhaus/cta-with-video',
+//   array(
+//       'title'       => __( 'Call to Action', 'blockhaus' ),
+//       'categories'    => [
+//         'callouts-and-quotes',
+//       ],
+//       'content'     => '
+//       <!-- wp:group {"tagName":"section","align":"full","className":"blockhaus-cta bg-accent slanted z-0 relative overflow-hidden"} -->
+//       <section class="wp-block-group alignfull blockhaus-cta bg-accent slanted z-0 relative overflow-hidden"><!-- wp:heading {"textAlign":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"900"}},"fontSize":"gigantic"} -->
+//       <h2 class="has-text-align-center has-gigantic-font-size" style="font-style:normal;font-weight:900">What is YPAG?</h2>
+//       <!-- /wp:heading -->
       
-      <!-- wp:paragraph {"align":"center","className":"w-3/4 mx-auto"} -->
-      <p class="has-text-align-center w-3/4 mx-auto">The NeurOX Young People’s Advisory Group (YPAG) are young co-researchers currently aged 16-19 years involved in mental health and ethics research.</p>
-      <!-- /wp:paragraph -->
+//       <!-- wp:paragraph {"align":"center","className":"w-3/4 mx-auto"} -->
+//       <p class="has-text-align-center w-3/4 mx-auto">The NeurOX Young People’s Advisory Group (YPAG) are young co-researchers currently aged 16-19 years involved in mental health and ethics research.</p>
+//       <!-- /wp:paragraph -->
       
-      <!-- wp:image {"id":1108,"width":711,"height":711,"sizeSlug":"full","linkDestination":"none","className":"mx-auto flex justify-center flex-col items-center w-3/4"} -->
-      <figure class="wp-block-image size-full is-resized mx-auto flex justify-center flex-col items-center w-3/4"><img src="http://ypag.local/wp-content/uploads/2022/06/infographic_normalized-1.svg" alt="" class="wp-image-1108" width="711" height="711"/></figure>
-      <!-- /wp:image -->
+//       <!-- wp:image {"id":1108,"width":711,"height":711,"sizeSlug":"full","linkDestination":"none","className":"mx-auto flex justify-center flex-col items-center w-3/4"} -->
+//       <figure class="wp-block-image size-full is-resized mx-auto flex justify-center flex-col items-center w-3/4"><img src="http://ypag.local/wp-content/uploads/2022/06/infographic_normalized-1.svg" alt="" class="wp-image-1108" width="711" height="711"/></figure>
+//       <!-- /wp:image -->
       
-      <!-- wp:buttons -->
-      <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"primary-default","align":"center","className":"is-style-button-retro"} -->
-      <div class="wp-block-button aligncenter is-style-button-retro"><a class="wp-block-button__link has-primary-default-background-color has-background" href="http://ypag.local/about/">Find out more</a></div>
-      <!-- /wp:button --></div>
-      <!-- /wp:buttons --></section>
-      <!-- /wp:group -->
-      ',
-  )
-); 
+//       <!-- wp:buttons -->
+//       <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"primary-default","align":"center","className":"is-style-button-retro"} -->
+//       <div class="wp-block-button aligncenter is-style-button-retro"><a class="wp-block-button__link has-primary-default-background-color has-background" href="http://ypag.local/about/">Find out more</a></div>
+//       <!-- /wp:button --></div>
+//       <!-- /wp:buttons --></section>
+//       <!-- /wp:group -->
+//       ',
+//   )
+// ); 
 
-    register_block_pattern(
-      'blockhaus/front-page-contact-form',
-      array(
-          'title'       => __( 'Contact Form - Front Page', 'blockhaus' ),
-          'categories'    => [
-            'callouts-and-quotes',
-          ],
-          'content'     => '
-          <!-- wp:group {"tagName":"section","align":"full","className":"py-56 lg:py-32 w-3/4 mx-auto","layout":{"inherit":false}} -->
-          <section class="wp-block-group alignfull py-[20%] w-3/4 mx-auto"><!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"900"}},"fontSize":"gigantic"} -->
-          <h2 class="has-gigantic-font-size" style="font-style:normal;font-weight:900">Contact us</h2>
-          <!-- /wp:heading -->
+//     register_block_pattern(
+//       'blockhaus/front-page-contact-form',
+//       array(
+//           'title'       => __( 'Contact Form - Front Page', 'blockhaus' ),
+//           'categories'    => [
+//             'callouts-and-quotes',
+//           ],
+//           'content'     => '
+//           <!-- wp:group {"tagName":"section","align":"full","className":"py-56 lg:py-32 w-3/4 mx-auto","layout":{"inherit":false}} -->
+//           <section class="wp-block-group alignfull py-[20%] w-3/4 mx-auto"><!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"900"}},"fontSize":"gigantic"} -->
+//           <h2 class="has-gigantic-font-size" style="font-style:normal;font-weight:900">Contact us</h2>
+//           <!-- /wp:heading -->
 
-          <!-- wp:paragraph -->
-          <p>Use the form below to get in touch with NeurOx YPAG. Your details will only be used to contact you regarding the message you send.</p>
-          <!-- /wp:paragraph -->
+//           <!-- wp:paragraph -->
+//           <p>Use the form below to get in touch with NeurOx YPAG. Your details will only be used to contact you regarding the message you send.</p>
+//           <!-- /wp:paragraph -->
 
-          <!-- wp:wpforms/form-selector {"formId":"142","className":"mx-auto"} /--></section>
-          <!-- /wp:group -->
-          ',
-      )
-    ); 
+//           <!-- wp:wpforms/form-selector {"formId":"142","className":"mx-auto"} /--></section>
+//           <!-- /wp:group -->
+//           ',
+//       )
+//     ); 
 
   register_block_pattern(
     'blockhaus/latest-blogposts',
@@ -216,101 +216,6 @@ function blockhaus_register_patterns() {
     )
     );
 
-  $testing = 'Hey there';
-
-  register_block_pattern(
-    'blockhaus/blockhaus-gallery',
-    array(
-      'title'   => __('Blockhaus Gallery', 'blockhaus'),
-      'categories'    => [
-        'gallery',
-      ],
-      'content' => '
-      <!-- wp:group {"tagName":"aside","style":{"spacing":{"blockGap":"0px"}},"className":"blockhaus-gallery has-accent-background-color has-background p-6 rounded-md space-y-6"} -->
-      <aside id="stories-gallery" class="wp-block-group blockhaus-gallery has-accent-background-color has-background p-6 rounded-md space-y-6"><!-- wp:paragraph -->
-      <p>' . $testing . '</p>
-      <!-- /wp:paragraph -->
-
-      <!-- wp:gallery {"linkTo":"none"} -->
-      <figure class="wp-block-gallery has-nested-images columns-default is-cropped bg-inherit"><!-- wp:image {"id":578,"sizeSlug":"medium","linkDestination":"none"} -->
-      <figure class="wp-block-image size-medium bg-inherit"><img src="http://pentecost.local/wp-content/uploads/2022/05/surface-ddcLX7Iis44-unsplash-3.jpg" alt="" class="wp-image-578"/></figure>
-      <!-- /wp:image -->
-
-      <!-- wp:image {"id":486,"sizeSlug":"medium","linkDestination":"none"} -->
-      <figure class="wp-block-image size-medium bg-inherit"><img src="http://pentecost.local/wp-content/uploads/2022/05/imansyah-muhamad-putera-n4KewLKFOZw-unsplash-1.jpg" alt="" class="wp-image-486"/></figure>
-      <!-- /wp:image -->
-
-      <!-- wp:image {"id":483,"sizeSlug":"medium","linkDestination":"none"} -->
-      <figure class="wp-block-image size-medium bg-inherit"><img src="http://pentecost.local/wp-content/uploads/2022/05/disruptivo-DokE5D4GbDk-unsplash-1.jpg" alt="" class="wp-image-483"/></figure>
-      <!-- /wp:image -->
-
-      <!-- wp:image {"id":437,"sizeSlug":"medium","linkDestination":"none"} -->
-      <figure class="wp-block-image size-medium bg-inherit"><img src="http://pentecost.local/wp-content/uploads/2022/05/pil.jpg" alt="" class="wp-image-437"/></figure>
-      <!-- /wp:image -->
-
-      <!-- wp:image {"id":435,"sizeSlug":"medium","linkDestination":"none"} -->
-      <figure class="wp-block-image size-medium bg-inherit"><img src="http://pentecost.local/wp-content/uploads/2022/05/clark-van-der-beken-xFdrt8YIoJc-unsplash.jpg" alt="" class="wp-image-435"/><figcaption>A final final caption</figcaption></figure>
-      <!-- /wp:image --></figure>
-      <!-- /wp:gallery --></aside>
-      <!-- /wp:group -->
-      ',
-    )
-    );
-
-  register_block_pattern(
-    'blockhaus/team-gallery',
-    array(
-      'title'   => __('Team Gallery', 'blockhaus'),
-      'categories'    => [
-        'gallery',
-      ],
-      'content' => '
-      <!-- wp:group {"tagName":"section","style":{"spacing":{"blockGap":"0px"}},"className":"grid grid-cols-3 gap-6 mt-6","layout":{"inherit":true}} -->
-      <section class="wp-block-group grid grid-cols-3 gap-6 mt-6"><!-- wp:group {"className":"flex flex-col bg-offset justify-center p-6"} -->
-      <div class="wp-block-group flex flex-col bg-offset justify-center p-6"><!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"extra-large"} -->
-      <h2 class="has-extra-large-font-size" style="font-style:normal;font-weight:700">Meet the team</h2>
-      <!-- /wp:heading -->
-
-      <!-- wp:paragraph -->
-      <p>Find out about the people who make us work</p>
-      <!-- /wp:paragraph --></div>
-      <!-- /wp:group -->
-
-      <!-- wp:image {"id":486,"sizeSlug":"profile","linkDestination":"none"} -->
-      <figure class="wp-block-image size-profile"><img src="http://pentecost.local/wp-content/uploads/2022/05/imansyah-muhamad-putera-n4KewLKFOZw-unsplash-1-300x300.jpg" alt="" class="wp-image-486"/><figcaption>Jimmy Quinn</figcaption></figure>
-      <!-- /wp:image -->
-
-      <!-- wp:image {"id":483,"sizeSlug":"profile","linkDestination":"none"} -->
-      <figure class="wp-block-image size-profile"><img src="http://pentecost.local/wp-content/uploads/2022/05/disruptivo-DokE5D4GbDk-unsplash-1-300x300.jpg" alt="" class="wp-image-483"/><figcaption>Lana Da Silva</figcaption></figure>
-      <!-- /wp:image -->
-
-      <!-- wp:image {"id":458,"sizeSlug":"profile","linkDestination":"none"} -->
-      <figure class="wp-block-image size-profile"><img src="http://pentecost.local/wp-content/uploads/2022/05/janko-ferlic-1nizzZ-SFw4-unsplash-3-300x300.jpg" alt="" class="wp-image-458"/><figcaption>Jessie Anderson</figcaption></figure>
-      <!-- /wp:image -->
-
-      <!-- wp:image {"id":578,"sizeSlug":"profile","linkDestination":"none"} -->
-      <figure class="wp-block-image size-profile"><img src="http://pentecost.local/wp-content/uploads/2022/05/surface-ddcLX7Iis44-unsplash-3-300x300.jpg" alt="" class="wp-image-578"/><figcaption><a href="http://pentecost.local/about/" data-type="page" data-id="6">Andrea Ireland</a></figcaption></figure>
-      <!-- /wp:image --></section>
-      <!-- /wp:group -->
-      ',
-    )
-    );
-
-    register_block_pattern(
-      'blockhaus/blockhaus-quote',
-      array(
-        'title'   => __('Blockhaus Quote', 'blockhaus'),
-        'categories'    => [
-          'callouts-and-quotes',
-        ],
-        'content' => '
-        <!-- wp:quote {"className":"blockhaus-quote relative bg-neutral-light-100 flex flex-col items-center text-center gap-2 px-20 py-16 rounded-md border-l-0 outline-4 outline-double outline-accent outline-offset-4 is-style-default","fontSize":"large"} -->
-        <blockquote class="wp-block-quote blockhaus-quote relative bg-neutral-light-100 flex flex-col items-center text-center gap-2 px-20 py-16 rounded-md border-l-0 outline-4 outline-double outline-accent outline-offset-4 is-style-default has-large-font-size"><p>The cure for boredom is curiosity. There is no cure for curiosity.</p><cite>Dorothy Parker</cite></blockquote>
-        <!-- /wp:quote -->
-        ',
-      )
-      );
-
       register_block_pattern(
         'blockhaus/blockhaus-quote-with-image',
         array(
@@ -332,36 +237,7 @@ function blockhaus_register_patterns() {
         )
         );
 
-    register_block_pattern(
-      'blockhaus/instagram',
-      array(
-        'title'   => __('Instagram', 'blockhaus'),
-        'categories'    => [
-          'social-media',
-        ],
-        'content' => '
-        <!-- wp:group {"tagName":"section","style":{"spacing":{"blockGap":"0px"}},"className":"flex gap-8 items-center justify-center p-6 w-fit mx-auto"} -->
-        <section class="wp-block-group flex gap-8 items-center justify-center p-6 w-fit mx-auto"><!-- wp:paragraph {"align":"center"} -->
-        <p class="has-text-align-center font-bold">Follow us on Instagram</p>
-        <!-- /wp:paragraph -->
-
-        <!-- wp:social-links {"size":"has-huge-icon-size","align":"center","className":"is-style-logos-only","layout":{"type":"flex","orientation":"horizontal","justifyContent":"left"}} -->
-        <ul class="wp-block-social-links aligncenter has-huge-icon-size is-style-logos-only"><!-- wp:social-link {"url":"https://instagram.com/yourusername","service":"instagram","label":"Visit our Instagram"} /--></ul>
-        <!-- /wp:social-links --></section>
-        <!-- /wp:group -->
-        ',
-      )
-      );
-
-      register_block_pattern(
-        'blockhaus/search',
-        array(
-          'title'   => __('Search', 'blockhaus'),
-          'content' => '
-          <!-- wp:search {"label":"Search for content","placeholder":"Enter search term ...","width":null,"widthUnit":"px","buttonText":"Submit","backgroundColor":"accent","textColor":"secondary","className":"flex items-center gap-4 mt-2 blockhaus-search"} /-->
-          ',
-        )
-        );
+     
 
         $facebook = get_field('facebook_url', 'options');
 
