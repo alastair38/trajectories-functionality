@@ -34,8 +34,8 @@ if($links):
 
 $count = count($links);
 if($count === 1) {
-  $cols = 'md:grid-cols-1';
-  $img_size = 'profile';
+  $cols = 'md:grid-cols-2';
+  $img_size = 'thumbnail';
 } else {
   $cols = 'md:grid-cols-2';
   $img_size = 'thumbnail';
