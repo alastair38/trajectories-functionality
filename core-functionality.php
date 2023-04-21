@@ -145,10 +145,10 @@ include( plugin_dir_path( __FILE__ ) . 'includes/blocks/block-patterns.php');
  * Load Blocks
  */
 function blockhaus_load_blocks() {
-    register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/archive-links-grid/block.json' );
-	register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/content-link/block.json' );
-    register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/content-links-grid/block.json' );
-    register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/external-links-grid/block.json' );
+    // register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/archive-links-grid/block.json' );
+	// register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/content-link/block.json' );
+    // register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/content-links-grid/block.json' );
+    register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/links-grid/block.json' );
 
 }
 add_action( 'init', 'blockhaus_load_blocks' );

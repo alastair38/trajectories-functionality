@@ -1,14 +1,14 @@
 {
     "key": "group_643e9a56c7d0a",
-    "title": "External Links Grid",
+    "title": "Links Grid",
     "fields": [
         {
-            "key": "field_643e9a56d3dd3",
-            "label": "Choose links",
-            "name": "external_links",
+            "key": "field_644168db5d95e",
+            "label": "",
+            "name": "",
             "aria-label": "",
-            "type": "repeater",
-            "instructions": "Link to external website content or resources . To link to standard pages or content items from this website, use the 'Content Links Grid' instead.",
+            "type": "message",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -16,12 +16,91 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "block",
+            "message": "Choose internal content links, external website links and \/ or archive page links to display in a grid. You can mix and match the types of links selected.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_64416a0260130",
+            "label": "Internal Link",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_643e983282b4f",
+            "label": "Add internal links",
+            "name": "content_links",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page",
+                "publication",
+                "project",
+                "post",
+                "link"
+            ],
+            "taxonomy": "",
+            "return_format": "object",
+            "multiple": 1,
+            "allow_null": 1,
+            "ui": 1
+        },
+        {
+            "key": "field_64416a1901270",
+            "label": "External Link",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_643e9a56d3dd3",
+            "label": "Add external links",
+            "name": "external_links",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
             "pagination": 0,
             "min": 0,
             "max": 0,
             "collapsed": "",
-            "button_label": "Add external link",
+            "button_label": "Add link",
             "rows_per_page": 20,
             "sub_fields": [
                 {
@@ -90,6 +169,121 @@
                     "parent_repeater": "field_643e9a56d3dd3"
                 }
             ]
+        },
+        {
+            "key": "field_64416a2489217",
+            "label": "Archive Link",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_643e9917d2a8d",
+            "label": "Add archive Links",
+            "name": "archive_links",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add link",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_643e9977d2a8e",
+                    "label": "Link text",
+                    "name": "link_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_643e9917d2a8d"
+                },
+                {
+                    "key": "field_643e9987d2a8f",
+                    "label": "Link",
+                    "name": "link",
+                    "aria-label": "",
+                    "type": "page_link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "page",
+                        "post",
+                        "publication",
+                        "link",
+                        "project"
+                    ],
+                    "taxonomy": "",
+                    "allow_archives": 1,
+                    "multiple": 0,
+                    "allow_null": 1,
+                    "parent_repeater": "field_643e9917d2a8d"
+                },
+                {
+                    "key": "field_643e99e9d2a90",
+                    "label": "Image to show with link",
+                    "name": "link_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
+                    "parent_repeater": "field_643e9917d2a8d"
+                }
+            ]
         }
     ],
     "location": [
@@ -110,5 +304,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1681827324
+    "modified": 1682066662
 }
