@@ -139,7 +139,7 @@ endif;
 
 // Include file to register Block Patterns
 
-include( plugin_dir_path( __FILE__ ) . 'includes/blocks/block-patterns.php');
+// include( plugin_dir_path( __FILE__ ) . 'includes/blocks/block-patterns.php');
 
 /**
  * Load Blocks

@@ -22,30 +22,6 @@ register_block_pattern_category(
 
 function blockhaus_register_patterns() {
 
-  register_block_pattern(
-    'blockhaus/header-hero',
-    array(
-        'title'       => __( 'Hero Header', 'blockhaus' ),
-        'categories'    => [
-          'header',
-        ],
-        'content'     => '<!-- wp:group {"tagName":"section","className":"grid grid-cols-1 md:grid-cols-hero place-items-center w-4/5 py-20 mx-auto","layout":{"inherit":true}} -->
-        <section class="wp-block-group grid grid-cols-1 md:grid-cols-hero place-items-center w-4/5 py-20 mx-auto"><!-- wp:image {"id":578,"sizeSlug":"landscape","linkDestination":"none","className":"md:col-span-2 md:col-start-1 md:row-start-1 size-landscape aspect-video rounded-md p-2 -rotate-2 z-0 image"} -->
-        <figure class="wp-block-image md:col-span-2 md:col-start-1 md:row-start-1 size-landscape aspect-video rounded-md p-2 -rotate-2 z-0 image"><img src="/wp-content/themes/blockhaus/assets/images/block-patterns/hero-header.jpg" alt="A woman sits in a doorway looking at her laptop" class="wp-image-578"/></figure>
-        <!-- /wp:image -->
-        
-        <!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"className":"bg-offset md:col-span-2 md:col-start-2 md:row-start-1 space-y-2 lg:space-y-6 p-6 self-center z-10","layout":{"inherit":false}} -->
-        <div class="wp-block-group bg-offset md:col-span-2 md:col-start-2 md:row-start-1 space-y-2 lg:space-y-6 p-6 self-center z-10"><!-- wp:heading {"level":1,"className":"heading font-black leading-10","fontSize":"gigantic"} -->
-        <h1 class="heading font-black leading-10 has-gigantic-font-size">Discover NeurOx YPAG</h1>
-        <!-- /wp:heading -->
-        
-        <!-- wp:paragraph {"className":"paragraph"} -->
-        <p class="paragraph">Start your research journey here</p>
-        <!-- /wp:paragraph --></div>
-        <!-- /wp:group --></section>
-        <!-- /wp:group -->',
-    )
-);
 
   register_block_pattern(
      'blockhaus/profile-block',

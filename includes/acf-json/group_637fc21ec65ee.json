@@ -23,65 +23,6 @@
             "ui": 1
         },
         {
-            "key": "field_6387871a801d1",
-            "label": "Contain image",
-            "name": "contain_image",
-            "aria-label": "",
-            "type": "true_false",
-            "instructions": "Select 'Yes' to contain the image at its default aspect ratio rather than cover the whole background.",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_637fc21f84687",
-                        "operator": "==",
-                        "value": "1"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 0,
-            "ui_on_text": "",
-            "ui_off_text": "",
-            "ui": 1
-        },
-        {
-            "key": "field_63878741fe9d7",
-            "label": "Position image",
-            "name": "position_image",
-            "aria-label": "",
-            "type": "button_group",
-            "instructions": "Choose which side the contained image will be aligned to.",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_6387871a801d1",
-                        "operator": "==",
-                        "value": "1"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "left": "Left",
-                "right": "Right"
-            },
-            "default_value": "",
-            "return_format": "value",
-            "allow_null": 1,
-            "layout": "horizontal"
-        },
-        {
             "key": "field_63d4098d18de9",
             "label": "Background Color",
             "name": "background_color",
@@ -147,5 +88,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1681730790
+    "modified": 1683572231
 }

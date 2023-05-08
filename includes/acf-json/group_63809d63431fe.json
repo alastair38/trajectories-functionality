@@ -1,7 +1,75 @@
 {
     "key": "group_63809d63431fe",
-    "title": "Content settings",
+    "title": "Branding and SEO Settings",
     "fields": [
+        {
+            "key": "field_64592d4078be7",
+            "label": "Branding",
+            "name": "branding",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_638099b6bf766",
+                    "label": "Default social media sharing image",
+                    "name": "social_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Set the default image that will be used for social media sharing of content if a featured image is has not been set (for that piece of content).",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_63809ab5ade10",
+                    "label": "Default featured image",
+                    "name": "featured_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Set the default image that will be used on listing pages if a piece of content's featured image is has not been set.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium"
+                }
+            ]
+        },
         {
             "key": "field_638dfe31a8715",
             "label": "Home page settings",
@@ -86,57 +154,6 @@
                     "max_size": "",
                     "mime_types": "",
                     "preview_size": "medium"
-                },
-                {
-                    "key": "field_63873548d48f1",
-                    "label": "Contain image",
-                    "name": "contain_image",
-                    "aria-label": "",
-                    "type": "true_false",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "message": "",
-                    "default_value": 0,
-                    "ui_on_text": "",
-                    "ui_off_text": "",
-                    "ui": 1
-                },
-                {
-                    "key": "field_638735bad48f2",
-                    "label": "Position image",
-                    "name": "position_image",
-                    "aria-label": "",
-                    "type": "button_group",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_63873548d48f1",
-                                "operator": "==",
-                                "value": "1"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "left": "Left",
-                        "right": "Right"
-                    },
-                    "default_value": "right",
-                    "return_format": "value",
-                    "allow_null": 0,
-                    "layout": "horizontal"
                 },
                 {
                     "key": "field_6387836e7a314",
@@ -228,57 +245,6 @@
                     "preview_size": "medium"
                 },
                 {
-                    "key": "field_63873678dd5a4",
-                    "label": "Contain image",
-                    "name": "contain_image",
-                    "aria-label": "",
-                    "type": "true_false",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "message": "",
-                    "default_value": 0,
-                    "ui_on_text": "",
-                    "ui_off_text": "",
-                    "ui": 1
-                },
-                {
-                    "key": "field_63873686dd5a5",
-                    "label": "Position image",
-                    "name": "position_image",
-                    "aria-label": "",
-                    "type": "button_group",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_63873678dd5a4",
-                                "operator": "==",
-                                "value": "1"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "left": "Left",
-                        "right": "Right"
-                    },
-                    "default_value": "right",
-                    "return_format": "value",
-                    "allow_null": 0,
-                    "layout": "horizontal"
-                },
-                {
                     "key": "field_638782e8e708c",
                     "label": "Background Color",
                     "name": "background_color",
@@ -368,57 +334,6 @@
                     "preview_size": "medium"
                 },
                 {
-                    "key": "field_63873708c514a",
-                    "label": "Contain image",
-                    "name": "contain_image",
-                    "aria-label": "",
-                    "type": "true_false",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "message": "",
-                    "default_value": 0,
-                    "ui_on_text": "",
-                    "ui_off_text": "",
-                    "ui": 1
-                },
-                {
-                    "key": "field_63873717c514b",
-                    "label": "Position image",
-                    "name": "position_image",
-                    "aria-label": "",
-                    "type": "button_group",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_63873708c514a",
-                                "operator": "==",
-                                "value": "1"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "left": "Left",
-                        "right": "Right"
-                    },
-                    "default_value": "right",
-                    "return_format": "value",
-                    "allow_null": 0,
-                    "layout": "horizontal"
-                },
-                {
                     "key": "field_6387835b066d3",
                     "label": "Background Color",
                     "name": "background_color",
@@ -465,6 +380,95 @@
                     "delay": 0
                 }
             ]
+        },
+        {
+            "key": "field_6459292f2fee2",
+            "label": "Links page settings",
+            "name": "link_page_settings",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6459292f2fee3",
+                    "label": "Header image",
+                    "name": "header_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "This will set a background image for the header of the page",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_6459292f2fee6",
+                    "label": "Background Color",
+                    "name": "background_color",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "color-choice",
+                        "id": ""
+                    },
+                    "choices": {
+                        "accent-quarter": "1",
+                        "offset": "2",
+                        "highlight": "3",
+                        "accent-secondary": "4",
+                        "accent-tertiary": "5"
+                    },
+                    "default_value": "",
+                    "return_format": "value",
+                    "allow_null": 1,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_6459292f2fee7",
+                    "label": "Page description",
+                    "name": "page_description",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "This will set a description to show at the top of the page, above the list of content items.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
         }
     ],
     "location": [
@@ -485,5 +489,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1681738810
+    "modified": 1683573731
 }
